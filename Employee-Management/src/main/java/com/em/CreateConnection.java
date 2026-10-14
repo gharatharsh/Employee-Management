@@ -11,7 +11,7 @@ public class CreateConnection {
 		
 		try {
 			Class.forName("org.postgresql.Driver");
-			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/employee_management","postgres","2005");
+			connection = DriverManager.getConnection("jdbc:postgresql://localhost:port-number/Database-name","postgres","password");
 		}catch(ClassNotFoundException e) {
 			e.printStackTrace();
 		}catch(SQLException e) {
